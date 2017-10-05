@@ -7,12 +7,12 @@
     "dev": "UA-43643469-9"
   },
   "organizer": {
-    "name": "GDG Lviv",
-    "twitter": "gdglviv"
+    "name": "GDG Indore",
+    "twitter": "gdgindore"
   },
   "webapp": {
     "shortName": "DevFest",
-    "themeColor": "#F57C00",
+    "themeColor": "#2196F3",
     "backgroundColor": "#F57C00"
   },
   "firebase": {
@@ -83,18 +83,18 @@
     }
   ],
   "location": {
-    "apiKey": "",
-    "name": "Pivdennyi Expo Center",
-    "address": "36 Shchyretska St, Lviv, Ukraine",
+    "apiKey": "AIzaSyCp5j2kt2psT8MYDOR-tBUDYZEeveKjxxk",
+    "name": "Hotel Sayaji",
+    "address": "H/1, Scheme No.54, Vijay Nagar, Indore, Madhya Pradesh,India",
     "link": "https://www.facebook.com/expopivdennij",
     "pointer": {
-      "latitude": 49.809841,
-      "longitude": 23.972805,
+      "latitude": 22.7514,
+      "longitude": 75.8893,
       "zoom": 15
     },
     "mapCenter": {
-      "latitude": 49.809841,
-      "longitude": 23.982805
+      "latitude": 22.7514,
+      "longitude": 75.8893
     },
     "images": [
       "/images/backgrounds/location_1.jpg",
@@ -116,12 +116,12 @@
     "home": {
       "title": "Home",
       "headerSettings": {
-        "backgroundColor": "#FF9800",
+        "backgroundColor": "#2196F3",
         "backgroundImage": "https://hamburg.devfest.de/images/backgrounds/dfhh_header.jpg",
         "fontColor": "#fff",
         "tabBarColor": "#fff",
         "video": {
-          "title": "GDG DevFest Ukraine 2016",
+          "title": "GDG DevFest Indore 2017",
           "youtubeId": "TdpbgRgz6eE",
           "text": "See how it was in 2016"
         },

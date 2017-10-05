@@ -129,7 +129,7 @@
           <div class="container" center-justified>
             <div class="home-wrapper">
               <iron-image class="logo" src="/images/logo-light.svg" sizing="contain"
-                          alt="GDG DevFest Ukraine 2016"></iron-image>
+                          alt="GDG DevFest Indore 2017"></iron-image>
               <h3 class="dates">{$ dates $}</h3>
               <h2 class="motto">{$ motto $}</h2>
               {% if pages.home.headerSettings.video %}
@@ -138,9 +138,9 @@
                   {$ playIcon $}
                 </div>
               {% endif %}
-              <div class="action-buttons">
+              <!-- <div class="action-buttons">
                 <paper-button class="primary" on-tap="_scrollToTickets" raised>{$ buyTicket $}</paper-button>
-              </div>
+              </div> -->
             </div>
           </div>
         </animatable-content>
@@ -191,14 +191,14 @@
           HOVERBOARD.Analytics.trackEvent('video', 'watch', '{$ pages.home.headerSettings.video.title $}');
         },
 
-        _scrollToTickets: function () {
-          HOVERBOARD.Analytics.trackEvent('ticket', 'buy_click', 'header');
-          Polymer.AppLayout.scroll({
-            top: HOVERBOARD.Elements.Tickets.getBoundingClientRect().top,
-            behavior: 'smooth',
-            target: HOVERBOARD.Elements.Scroller
-          });
-        }
+        // _scrollToTickets: function () {
+        //   HOVERBOARD.Analytics.trackEvent('ticket', 'buy_click', 'header');
+        //   Polymer.AppLayout.scroll({
+        //     top: HOVERBOARD.Elements.Tickets.getBoundingClientRect().top,
+        //     behavior: 'smooth',
+        //     target: HOVERBOARD.Elements.Scroller
+        //   });
+        // }
 
       });
 
