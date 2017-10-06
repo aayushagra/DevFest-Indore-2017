@@ -44,10 +44,6 @@
       "permalink": "/"
     },
     {
-      "route": "blog",
-      "permalink": "/blog/"
-    },
-    {
       "route": "schedule",
       "permalink": "/schedule/"
     },
@@ -64,7 +60,7 @@
     {
       "name": "twitter",
       "nickname": "GDGLviv",
-      "url": "https://twitter.com/gdglviv"
+      "url": "https://twitter.com/a"
     },
     {
       "name": "gplus",

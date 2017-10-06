@@ -23,7 +23,343 @@
 
   <template>
 
-    <style include="shared-styles">
+    <style scope="speakers-page-0" class="">:host > * {
+      ;
+    }
+
+    [layout] {
+      display:-ms-flexbox;display:-webkit-flex;display:flex;
+    }
+
+    [layout][horizontal] {
+      display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row;
+    }
+
+    [layout][vertical] {
+      display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;
+    }
+
+    [layout][center] {
+      -ms-flex-align:center;-webkit-align-items:center;align-items:center;
+    }
+
+    [layout][center-center] {
+      -ms-flex-align:center;-webkit-align-items:center;align-items:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;
+    }
+
+    [flex] {
+      -ms-flex:1 1 0.000000001px;-webkit-flex:1;flex:1;-webkit-flex-basis:0.000000001px;flex-basis:0.000000001px;
+    }
+
+    [flex-auto] {
+      -ms-flex:1 1 auto;-webkit-flex:1 1 auto;flex:1 1 auto;
+    }
+
+    [two] {
+      -ms-flex:2;-webkit-flex:2;flex:2;
+    }
+
+    [end-justified] {
+      -ms-flex-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end;
+    }
+
+    [end] {
+      -ms-flex-align:end;-webkit-align-items:flex-end;align-items:flex-end;
+    }
+
+    [justified] {
+      -ms-flex-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;
+    }
+
+    [center-justified] {
+      -ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;
+    }
+
+    [self-center] {
+      -ms-align-self:center;-webkit-align-self:center;align-self:center;
+    }
+
+    [self-end] {
+      -ms-align-self:flex-end;-webkit-align-self:flex-end;align-self:flex-end;
+    }
+
+    [wrap] {
+      -ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap;
+    }
+
+    [inline] {
+      display:-ms-inline-flexbox;display:-webkit-inline-flex;display:inline-flex;
+    }
+
+    [relative] {
+      position:relative;
+    }
+
+    [fit] {
+      position:absolute;top:0;right:0;bottom:0;left:0;
+    }
+
+    [hidden] {
+      display:none !important;
+    }
+
+    [show] {
+      display:block !important;
+    }
+
+    body {
+      margin:0;min-height:100vh;
+    }
+
+    body, .markdown-html {
+      font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;color:#212121;font-size:18px;font-weight:300;line-height:1.4;
+    }
+
+    h1, h2, h3, h4, .markdown-html h1, .markdown-html h2, .markdown-html h3, .markdown-html h4 {
+      margin:0;font-weight:300;
+    }
+
+    a, .anchor-like, .markdown-html a {
+      color:#2196F3;text-decoration:none;
+    }
+
+    .placeholder-color {
+      background-color:#BBDEFB;
+    }
+
+    .container {
+      padding:40px 16px;
+    }
+
+    .container-narrow {
+      padding:20px 16px;
+    }
+
+    .container .heading {
+      margin-bottom:20px;font-size:32px;text-transform:uppercase;letter-spacing:0.05em;
+    }
+
+    .page-header {
+      margin:-90px auto 0;padding-bottom:20px;
+    }
+
+    .page-title {
+      margin-left:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:20px;color:#fff;pointer-events:none;
+    }
+
+    .markdown-html img {
+      margin-right:auto;margin-left:auto;max-width:100%;display:block;
+    }
+
+    @media (min-width: 769px) {
+    .container {
+      margin:0 auto;padding:60px 16px;max-width:896px;
+    }
+
+    .container-narrow {
+      padding:30px 16px;
+    }
+
+    .container .heading {
+      margin-bottom:40px;
+    }
+
+    .page-header {
+      margin:-170px auto 0;padding-bottom:0;
+    }
+
+    .page-title {
+      font-size:42px;
+    }
+
+    }
+
+    @media (min-width: 1400px) {
+    .container {
+      max-width:1280px;
+    }
+
+    }
+
+    .text-center {
+      text-align:center;
+    }
+
+    .align-pb-block {
+      margin-left:-9px;
+    }
+
+    [show] {
+      transition:opacity 0.5s;opacity:1 !important;
+    }
+
+    [hide] {
+      transition:opacity 0.5s;opacity:0 !important;
+    }
+
+    paper-dialog-scrollable {
+      padding:0;margin:0;
+    }
+
+    .scrollable {
+      -webkit-overflow-scrolling:touch;overflow:auto;
+    }
+
+    .noscroll {
+      overflow:hidden;
+    }
+
+    paper-button.primary {
+      background:#2196F3;color:#FFFFFF;
+    }
+
+    paper-tabs {
+      ;
+    }
+
+    paper-tabs paper-tab {
+      ;
+    }
+
+    paper-tab[link] {
+      padding:0;
+    }
+
+    paper-tab[link] a {
+      padding:0 12px;
+    }
+
+    paper-dialog {
+      color:inherit;
+    }
+
+    :host {
+      display:block;
+    }
+
+    .details {
+      display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;
+    }
+
+    .details-item {
+      display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row;padding-bottom:32px;
+    }
+
+    .details-icon {
+      ;margin-right:24px;
+    }
+
+    .details-info {
+      -ms-flex:1 1 0.000000001px;-webkit-flex:1;flex:1;-webkit-flex-basis:0.000000001px;flex-basis:0.000000001px;
+    }
+
+    .details-title {
+      margin-bottom:24px;font-size:24px;font-weight:400;
+    }
+
+    .speakers-container {
+      display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap;
+    }
+
+    .speaker {
+      display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row;width:100%;margin:8px 0;
+    }
+
+    .card {
+      -ms-flex:1 1 0.000000001px;-webkit-flex:1;flex:1;-webkit-flex-basis:0.000000001px;flex-basis:0.000000001px;display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;background:#FFFFFF;color:#212121;
+    }
+
+    .card-content {
+      display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;-ms-flex:1 1 auto;-webkit-flex:1 1 auto;flex:1 1 auto;padding:16px;font-size:18px;cursor:pointer;
+    }
+
+    .bio {
+      color:#212121;
+    }
+
+    .card-actions {
+      border-top:1px solid #e8e8e8;padding:5px 16px;position:relative;
+    }
+
+    .header {
+      position:relative;height:256px;
+    }
+
+    .photo {
+      position:absolute;top:0;right:0;bottom:0;left:0;
+    }
+
+    .photo-overlay {
+      position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(to top, rgba(0, 0, 0, 0.5) 4%, rgba(0, 0, 0, 0) 50%);
+    }
+
+    .badges {
+      margin:0;padding:16px;position:relative;list-style:none;text-align:right;
+    }
+
+    .badge {
+      display:inline-block;
+    }
+
+    .badge:not(:last-of-type):after {
+      color:rgba(255, 255, 255, 0.8);vertical-align:middle;font-size:14px;content:"\2022";
+    }
+
+    .badge a {
+      color:#FFFFFF;font-size:14px;font-weight:500;
+    }
+
+    .bottom-image-text {
+      padding:16px;position:absolute;bottom:0;color:#FFFFFF;
+    }
+
+    .name {
+      font-size:24px;
+    }
+
+    .title {
+      margin-top:-5px;display:block;font-size:14px;
+    }
+
+    .social-icon {
+      color:#727272;
+    }
+
+    @media (min-width: 601px) {
+    .speakers-container {
+      display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row;
+    }
+
+    .speaker {
+      width:calc(100% / 2 - 2 * 8px);margin:8px;
+    }
+
+    }
+
+    @media (min-width: 961px) {
+    .speaker {
+      width:calc(100% / 3 - 2 * 8px);
+    }
+
+    }
+
+    .tags {
+      font-size:14px;color:#212121;
+    }
+
+    .tag {
+      margin:2px 0 0 2px;padding:1px 4px;color:#fff;display:inline-block;font-size:12px;border-radius:2px;background:#bdbdbd;
+    }
+
+    .markdown-html {
+      font-size:16px;
+    }
+
+    .company-logo {
+      margin:0 auto 10px;width:110px;height:25px;
+    }</style>
+
+    <!--<style include="shared-styles">
       :host {
         display: block;
         --grid-gutter: 8px;
@@ -170,13 +506,16 @@
         width: 110px;
         height: 25px;
       }
-    </style>
+    </style>-->
 
     <app-route route="{{route}}"
                pattern="/:speakerId"
                data="{{routeData}}"></app-route>
 
-    <div class="container speakers-container">
+    <div class="container speakers-container"><div class="details"><div class="details-item" cascaded=""><iron-icon class="details-icon" icon="info"></iron-icon><div class="details-info"><h4 class="details-title">Declare soon</h4><marked-element class="details-text" markdown="Currently, we are accepting proposals from interested speakers till **18th October**. We will shortlist the speakers based on received application and publish the list once it gets confirmed."><div class="markdown-html"><p>Currently, we are accepting proposals from interested speakers till <strong>18th October</strong>. We will shortlist the speakers based on received application and publish the list once it gets confirmed.</p>
+</div></marked-element></div></div><div class="text-center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeg41OhfG4cQnB17l7zztuA28S1rOuMH6Q3-VUq94yVoZVu4w/viewform" target="_blank" class="style-scope header-content" style="color: white"><paper-button class="primary style-scope header-content x-scope paper-button-0" raised="" role="button" tabindex="0" animated="" aria-disabled="false" elevation="1">Submit a proposal</paper-button></a></div></div></div>
+
+    <!--<div class="container speakers-container">
       <template is="dom-repeat" items="[[_toArray(speakers)]]" as="speaker" on-dom-change="updateCascadedNodes">
         <div class="speaker" cascaded>
           <paper-material class="card">
@@ -219,7 +558,7 @@
           </paper-material>
         </div>
       </template>
-    </div>
+    </div>-->
     <footer-block app="{{app}}" cascaded></footer-block>
 
     <speaker-details id="speakerDetails"
