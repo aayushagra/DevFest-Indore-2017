@@ -7,7 +7,7 @@
   "motto": "Be a GDG. Be a Hero!",
   "playIcon": "See how it was in 2016",
   "c4p": "Become a speaker",
-  "buyTicket": "Buy ticket",
+  "buyTicket": "Buy tickets",
   "backToTop": "Back to top",
   "subscribe": "Subscribe",
   "yourEmail": "Your email",
@@ -16,7 +16,7 @@
   "ticketsTitle": "Tickets",
   "ticketsDetails": "Tickets grant access to all conference sections, coffee breaks, lunch and party. Accommodation is NOT included in the ticket price.",
   "close": "Close",
-  "soldOutTickets": "Sold Out",
+  "soldOutTickets": "Coming soon",
   "socialTitle": "Social",
   "socialMotto": "Add to circles, like, follow or connect with us on",
   "beforeHashtag": "What's up",
@@ -119,7 +119,7 @@
     }
   ],
   "callToAction": {
-    "videoTitle": "GDG DevFest 2017",
+    "videoTitle": "GDG DevFest 2016",
     "videoId": "DfMnJAzOFng"
   }
 }

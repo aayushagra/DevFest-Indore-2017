@@ -138,9 +138,9 @@
                   {$ playIcon $}
                 </div>
               {% endif %}
-              <!-- <div class="action-buttons">
+              <div class="action-buttons">
                 <paper-button class="primary" on-tap="_scrollToTickets" raised>{$ buyTicket $}</paper-button>
-              </div> -->
+              </div> 
             </div>
           </div>
         </animatable-content>
@@ -186,19 +186,22 @@
         },
 
         _openVideo: function () {
+          window.open('https://photos.google.com/share/AF1QipN692eiAv7jApGlmatb8FLQbHoa0WlV6sRFHdmBLOg_L9Lnoe7oGV58xxR7M0vzZw?key=ZWllVE41Y2d5RHRXM0RRZGJnLTg3eXZuMl9Sc3lB', '_blank');
+          /*
           HOVERBOARD.Elements.Template.openVideo('{$ pages.home.headerSettings.video.title $}',
             '{$ pages.home.headerSettings.video.youtubeId $}', true);
-          HOVERBOARD.Analytics.trackEvent('video', 'watch', '{$ pages.home.headerSettings.video.title $}');
+          HOVERBOARD.Analytics.trackEvent('video', 'watch', '{$ pages.home.headerSettings.video.title $}');*/
+
         },
 
-        // _scrollToTickets: function () {
-        //   HOVERBOARD.Analytics.trackEvent('ticket', 'buy_click', 'header');
-        //   Polymer.AppLayout.scroll({
-        //     top: HOVERBOARD.Elements.Tickets.getBoundingClientRect().top,
-        //     behavior: 'smooth',
-        //     target: HOVERBOARD.Elements.Scroller
-        //   });
-        // }
+        _scrollToTickets: function () {
+          HOVERBOARD.Analytics.trackEvent('ticket', 'buy_click', 'header');
+          Polymer.AppLayout.scroll({
+            top: HOVERBOARD.Elements.Tickets.getBoundingClientRect().top,
+            behavior: 'smooth',
+            target: HOVERBOARD.Elements.Scroller
+          });
+        }
 
       });
 

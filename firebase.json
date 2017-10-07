@@ -6,10 +6,6 @@
     "public": "build",
     "cleanUrls": true,
     "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ],
     "ignore": [
       "bower.json",
