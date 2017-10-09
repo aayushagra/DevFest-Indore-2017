@@ -35,7 +35,7 @@
   "hashtag": "a",
   "disqusShortName": "hoverboard-gdg-x",
   "tweetsSource": "/data/tweets.json",
-  "partnershipProposition": "http://bit.ly/df16-sponsor",
+  "partnershipProposition": "https://goo.gl/forms/DqZEKdfUTVH7B49n1",
   "videosSessionsUrl": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AX3-ONkkWmDOZezu9Cmnv",
   "enableSessionsRating": true,
   "navigation": [
@@ -75,8 +75,8 @@
   ],
   "location": {
     "apiKey": "AIzaSyCp5j2kt2psT8MYDOR-tBUDYZEeveKjxxk",
-    "name": "Hotel Sayaji",
-    "address": "H/1, Scheme No.54, Vijay Nagar, Indore, Madhya Pradesh,India",
+    "name": "To Be Announced",
+    "address": "The Venue for DevFest Indore will be announced soon",
     "link": "https://www.facebook.com/expopivdennij",
     "pointer": {
       "latitude": 22.7514,
@@ -88,9 +88,9 @@
       "longitude": 75.8893
     },
     "images": [
-      "/images/backgrounds/s1.jpg",
-      "/images/backgrounds/s2.jpg",
-      "/images/backgrounds/s3.jpg"
+      "/images/backgrounds/rajwada.jpg",
+      "/images/backgrounds/rajwada.jpg",
+      "/images/backgrounds/rajwada.jpg"
     ]
   },
   "gallery": {
@@ -147,6 +147,7 @@
     "team": {
       "title": "Team",
       "headerSettings": {
+        "backgroundImage": "https://drive.google.com/file/d/0B3oH5-Geggu9T0lBUTljY01pbDg/view",
         "backgroundColor": "#009688",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
