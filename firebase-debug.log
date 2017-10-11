@@ -1,0 +1,25 @@
+[debug] [2017-10-11T11:32:02.440Z] ----------------------------------------------------------------------
+[debug] [2017-10-11T11:32:02.455Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Mayank\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2017-10-11T11:32:02.455Z] CLI Version:   3.13.1
+[debug] [2017-10-11T11:32:02.455Z] Platform:      win32
+[debug] [2017-10-11T11:32:02.455Z] Node Version:  v8.6.0
+[debug] [2017-10-11T11:32:02.455Z] Time:          Wed Oct 11 2017 17:02:02 GMT+0530 (India Standard Time)
+[debug] [2017-10-11T11:32:02.455Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-11T11:32:03.079Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-10-11T11:32:03.079Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Mayank\Desktop\hoverboard
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
